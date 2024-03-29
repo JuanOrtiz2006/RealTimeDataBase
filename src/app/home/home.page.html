@@ -1,0 +1,42 @@
+<ion-content [fullscreen]="true">
+  <ion-card class="triangular-card">
+  </ion-card>
+
+  <ion-card class="contenedor">
+    <ion-card class="casa">
+      <ion-grid>
+        <ion-row>
+          <ion-col size="6">
+            <ion-card class="ventana" (click)="encender(1)" [style]="color"></ion-card>
+            <img width="100%" height="100%" src="../../assets/icon/baño.jpeg" >
+          </ion-col>
+          <ion-col size="6">
+            <ion-card class="ventana" (click)="encender(2)" [style]="color2"></ion-card>
+            <img width="100%" height="100%" src="../../assets/icon/cocina.jpeg">
+          </ion-col>
+          <ion-col size="6">
+            <ion-card class="ventana" (click)="encender(3)" [style]="color3"></ion-card>
+            <img width="100%" height="100%" src="../../assets/icon/cuarto.jpeg">
+          </ion-col>
+          <ion-col size="6">
+            <ion-card class="ventana" (click)="encender(4)" [style]="color4"></ion-card>
+            <img width="100%" height="100%" src="../../assets/icon/sala.jpeg" >
+          </ion-col>
+          <ion-col size="6">
+            <ion-card class="ventana" (click)="encender(5)" [style]="color5"></ion-card>
+            <img width="100%" height="145%" src="../../assets/icon/musica.jpeg">
+          </ion-col>
+          <ion-col size="6">
+            <ion-card class="ventana" (click)="encender(6)" [style]="color6"></ion-card>
+            <img width="100%" height="145%" src="../../assets/icon/lavado.jpeg">
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+      <ion-row>
+        <ion-col>
+          <img class="puerta" width="30%" src="../../assets/icon/puerta.jpeg">
+        </ion-col>
+      </ion-row>
+    </ion-card>
+  </ion-card>
+</ion-content>

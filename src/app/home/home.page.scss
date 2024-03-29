@@ -1,0 +1,53 @@
+.triangular-card {
+  position: relative;
+  margin-left: 0%;
+  width: 100%; /* Ancho de la tarjeta */
+  height: 26%;
+  padding-top: 1%; /* Esto establece la altura del triángulo */
+  background-color: transparent;
+  overflow: hidden;
+  border-radius: 0;
+  margin-bottom: 3%;
+  &:after {
+    content: '';
+    position: absolute;
+    
+    left: 2%;
+    width: 50%;
+    height: 0;
+    border-style: solid;
+    border-width: 0 100px 173.21px 100px; /* Ajusta los valores según el tamaño del triángulo */
+    border-color: transparent transparent #785411 transparent; /* Color del triángulo */
+  }
+
+}
+
+.contenedor{
+  margin-top: -3%;
+  margin-left: 0%;
+  width: 100%;
+  border-radius: 0;
+}
+.casa{
+  margin: 0%;
+  margin-left: 2%;
+  width: 96%;
+  border-radius: 0;
+  padding: 10%;
+  padding-bottom: 1%;
+  background-color: antiquewhite;
+}
+
+.ventana{
+  margin: 0%;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  z-index: 2; /* Asegura que el ion-card esté delante de la imagen */
+  width: 95%; /* Ancho de la tarjeta */
+  padding-bottom: 95%; /* Altura de la tarjeta (ajusta según tus necesidades) */
+}
+
+.puerta{
+  margin-top: 15%;
+  margin-left: 35%;
+}
